@@ -1,2 +1,2 @@
 # udacity_grow
-Work completed for Udacity Grow with Google Challenge Scholarship
+Work completed for the Udacity _Grow with Google Challenge Scholarship for Front-End_ program.
