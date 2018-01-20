@@ -1,0 +1,22 @@
+/* add your CSS here */
+body {
+	width: 500px;
+
+}
+
+img {
+	width: 300px;	
+}
+
+.bordered {
+	border: 5px solid red;;
+	padding: 10px 10px 10px 10px;
+}
+
+#favs {
+	font-weight: 700;
+}
+
+#interesting_fact {
+	font-style: italic;
+}
