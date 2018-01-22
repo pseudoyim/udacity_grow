@@ -1,16 +1,35 @@
 /* add your CSS here */
 body {
-	width: 500px;
+	width: 320px;
+	box-shadow: 10px 10px 10px #555;
+}
 
+h3 {
+	padding: 10px 10px 10px 10px ;
 }
 
 img {
-	width: 300px;	
+	width: 300px;
+	padding: 10px 10px 10px 10px ;
 }
 
-.bordered {
-	border: 5px solid red;;
-	padding: 10px 10px 10px 10px;
+li {
+	list-style-type: none;
+}
+
+ul {
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+.info {
+	border: 1px dotted red;
+	margin: 10px 10px 10px 10px;
+	padding: 10px 10px 10px 10px;;
+}
+
+.main {
+	border: 1px solid blue;
 }
 
 #favs {
