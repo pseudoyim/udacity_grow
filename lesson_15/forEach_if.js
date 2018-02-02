@@ -16,6 +16,7 @@ var test = [12, 929, 11, 3, 199, 1000, 7, 1, 24, 37, 4,
 
 // Write your code here
 // Gotta update the element by specifying its index in the array.
+// KEY FEATURE: The original array is manipulated and returned.
 
 test.forEach(function(element, index, array){
 	if(element % 3 === 0){
