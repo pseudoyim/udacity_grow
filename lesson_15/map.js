@@ -1,5 +1,4 @@
 //KEY FEATURE: Returns a NEW array, different from the one you started with.
-//forEach() will not help you if you want to PERMANENTLY MODIFY the original array.
 //You no longer need to iterate through indices. map() does this for you.
 
 var donuts = ["jelly donut", "chocolate donut", "glazed donut"];
