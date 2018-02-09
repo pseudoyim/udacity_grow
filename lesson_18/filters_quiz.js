@@ -14,4 +14,22 @@ h1 = articleList.sibling('h1')
 
 kids = articleList.children()
 
-parents = articleList.parents()
+parents = articleList.parents('div')
+
+
+
+//answer:
+
+var articleList, h1, kids, parents;
+
+articleList = $('.article-list');
+
+h1 = articleList.siblings('h1'); //you needed plural - 'siblings'
+
+kids = articleList.children();
+//also:
+kids = articleList.find('*');
+
+parents = articleList.parents('div');
+
+console.log(h1, kids, parents);
