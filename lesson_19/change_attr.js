@@ -20,7 +20,7 @@ var navList;
 
 navList = $('li.nav-item a');
 
-navList.first().attr("href", "#1");
+navList.first().attr("href", "#1");g
 
 
 
