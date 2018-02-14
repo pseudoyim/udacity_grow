@@ -17,9 +17,11 @@ $( '#myAnchor' ).on( 'click', function( evt ) {
 event.keyCode
 // to learn what key was pressed - invaluable if you need to listen for a specific key
 
+
 // Use case 3:
 event.pageX & event.pageY
 // to know where on the page the click occurred - helpful for analytics tracking
+
 
 // Use case 4:
 event.type
