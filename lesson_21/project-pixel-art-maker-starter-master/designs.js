@@ -9,13 +9,8 @@ var color = $('#colorPicker').val();
 
 // var height, weight, table;
 
-// function makeGrid() {
-// 	console.log(height)
-// 	for (var i = 0; i < height; i++) {
-// 		table.append('<tr><td></td></tr>');
-// 	}
-// };
 
+//WORKS
 // When size is submitted by the user, call makeGrid()
 $('#submitSize').click(function(e){
 	$('#pixelCanvas').children().remove();
@@ -24,4 +19,6 @@ $('#submitSize').click(function(e){
 		$('#pixelCanvas').append('<tr><td></td></tr>');
 	}
 });
-	
+
+
+
