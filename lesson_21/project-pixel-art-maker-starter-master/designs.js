@@ -3,11 +3,11 @@
 var color = $('#colorPicker').val();
 
 // Select size input
-// var height = Number($('#inputHeight').val());
-// var width = Number($('#inputWidth').val());
-// var table = $('#pixelCanvas')
+var height = Number($('#inputHeight').val());
+var width = Number($('#inputWidth').val());
+var table = $('#pixelCanvas')
 
-// var height, weight, table;
+var height, weight, table;
 
 
 //WORKS
