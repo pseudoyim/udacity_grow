@@ -10,15 +10,13 @@ var table = $('#pixelCanvas')
 var height, weight, table;
 
 
-//WORKS
+//WORKS!
 // When size is submitted by the user, call makeGrid()
-$('#submitSize').click(function(e){
+$('#submitSize').click(function(){
 	$('#pixelCanvas').children().remove();
 	var height = new Number($('#inputHeight').val());
 	for (var i = 0; i < height; i++) {
 		$('#pixelCanvas').append('<tr><td></td></tr>');
 	}
 });
-
-
 
