@@ -16,7 +16,9 @@ $('#submitSize').click(function(){
 	$('#pixelCanvas').children().remove();
 	var height = new Number($('#inputHeight').val());
 	for (var i = 0; i < height; i++) {
-		$('#pixelCanvas').append('<tr><td></td></tr>');
+		// $('#pixelCanvas').append('<tr><td></td></tr>');  this works by itself
+		$('#pixelCanvas').append('<tr></tr>');
+		//insert however many <td>s here.
 	}
 });
 
