@@ -1,13 +1,14 @@
 // Select color input
 var color = $('#colorPicker').val();
+console.log(color);
 
 // alert('working');
 // console.log('hello');
 
 // Select size input
-var rows = Number($('#inputHeight').val());
-var cols = Number($('#inputWidth').val());
-var table = $('table');
+// var rows = Number($('#inputHeight').val());
+// var cols = Number($('#inputWidth').val());
+// var table = $('table');
 
 
 function makeGrid(){
@@ -29,5 +30,25 @@ function makeGrid(){
 	}
 };
 
-// When size is submitted by the user, call makeGrid()
+
+
+// When size is submitted by the user, call makeGrid().
 $('#submitSize').click(makeGrid);
+
+// When cell is clicked by the user, change to the color selected by the user.
+// $('#pixelCanvas tr td').each(function() {
+// 	alert('td clicked')
+// 	$(this).css("background-color", color);
+// });
+
+$("tr td").click(function(e){     //function_td
+  alert('ha!');
+  $(this).css("background-color",color);
+  e.stopPropagation();
+});
+
+
+// $('.childDiv').click(function() {
+//   $(this).parent().find('.childDiv').css('background-color', '#ffffff');
+//   $(this).css('background-color', '#ff0000');
+// });
