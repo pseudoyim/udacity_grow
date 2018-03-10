@@ -38,3 +38,11 @@ td {
 input[type=number] {
     width: 6em;
 }
+
+
+.red {
+    background-color: red;
+}
+.yellow {
+    background-color: yellow;
+}

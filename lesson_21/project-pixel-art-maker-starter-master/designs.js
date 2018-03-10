@@ -1,15 +1,6 @@
-// Select color input
-var color = $('#colorPicker').val();
-console.log(color);
+//This was a godsend: https://stackoverflow.com/questions/19641188/jquery-click-function-not-working-on-td-tag
 
-// alert('working');
-// console.log('hello');
-
-// Select size input
-// var rows = Number($('#inputHeight').val());
-// var cols = Number($('#inputWidth').val());
-// var table = $('table');
-
+var color
 
 function makeGrid(){
 	$('table').children().remove();
@@ -30,25 +21,26 @@ function makeGrid(){
 	}
 };
 
-
-
-// When size is submitted by the user, call makeGrid().
+// When dims are submitted by the user, call makeGrid().
 $('#submitSize').click(makeGrid);
 
-// When cell is clicked by the user, change to the color selected by the user.
-// $('#pixelCanvas tr td').each(function() {
-// 	alert('td clicked')
-// 	$(this).css("background-color", color);
-// });
 
-$("tr td").click(function(e){     //function_td
-  alert('ha!');
-  $(this).css("background-color",color);
-  e.stopPropagation();
+// When a cell is clicked, change color of cell accordingly.
+$('#pixelCanvas').on('click', 'td', function() {
+    var cell = $(this);
+    var state = cell.data('state') || 'first';
+    color = $('#colorPicker').val();
+
+    switch (state) {
+        case 'first':
+            cell.css('background-color', color);
+            cell.data('state', 'second');
+            break;
+        case 'second':
+            cell.css('background-color', 'white')
+            cell.data('state', 'first');
+            break;
+        default:
+            break;
+    }
 });
-
-
-// $('.childDiv').click(function() {
-//   $(this).parent().find('.childDiv').css('background-color', '#ffffff');
-//   $(this).css('background-color', '#ff0000');
-// });
