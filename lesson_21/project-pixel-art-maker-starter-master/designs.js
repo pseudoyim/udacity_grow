@@ -1,4 +1,5 @@
 //This was a godsend: https://stackoverflow.com/questions/19641188/jquery-click-function-not-working-on-td-tag
+// And so was this: http://jsfiddle.net/NhT92/
 
 var color
 
